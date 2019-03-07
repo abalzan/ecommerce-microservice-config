@@ -1,3 +1,14 @@
 spring:
   profiles:
-    active: dev
+    active: test
+  datasource:
+    url: jdbc:h2:mem:ecommerce;MODE=MySQL
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+
+flyway:
+  url: "jdbc:h2:mem:ecommerce;MODE=MySQL;"
+  user: sa
+  password:
+  baseline-on-migrate: false
