@@ -15,15 +15,6 @@ spring:
     hibernate:
       ddl-auto: update
 
-#hystrix timeout
-hystrix:
-  command:
-    default:
-      execution:
-        isolation:
-          thread:
-            timeoutInMilliseconds: 100000
-
 management:
   server:
     port: 8091
