@@ -14,7 +14,7 @@ spring:
           dialect: org.hibernate.dialect.MySQL8Dialect
     hibernate:
       ddl-auto: update
-  #this is to allow mapping tables with uppercase ex. PRODUCT, without this it is mapped as product 
+  #Spring boot JPA insert in TABLE with uppercase name with Hibernate
   jpa:
     hibernate:
       naming:
