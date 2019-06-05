@@ -1,11 +1,17 @@
 eureka:
   client:
-    serviceUrl: 
+    serviceUrl:
       defaultZone:  http://localhost:8761/eureka/
 
 zuul:
   routes:
     address:
       serviceId: address-api
+    category:
+      serviceId: category-api
+    product:
+      serviceId: product-api
+    user:
+      serviceId: user-api
   host:
     socket-timeout-millis: 30000
