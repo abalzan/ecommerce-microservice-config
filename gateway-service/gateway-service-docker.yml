@@ -5,6 +5,8 @@ eureka:
 
 zuul:
   routes:
+    gateway:
+      serviceId: gateway-service
     address:
       serviceId: address-api
     category:
