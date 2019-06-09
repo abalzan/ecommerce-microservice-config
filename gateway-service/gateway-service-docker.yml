@@ -14,4 +14,4 @@ zuul:
     user:
       serviceId: user-api
   host:
-    socket-timeout-millis: 30000
+    socket-timeout-millis: 60000
