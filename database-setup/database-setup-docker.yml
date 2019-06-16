@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:mysql://mysqldb:3306/ecommerce
+    url: jdbc:mysql://mysqldb:3306/ecommerce?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC&useSSL=false
     username: ecommerce
     password: ecommerce
     tomcat.max-wait: 20000
