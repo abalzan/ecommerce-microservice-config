@@ -1,23 +1,18 @@
 spring:
   datasource:
     url: jdbc:mysql://mysqldb:3306/ecommerce
-    driverClassName: com.mysql.cj.jdbc.Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver
     username: ecommerce
     password: ecommerce
     tomcat.max-wait: 20000
     tomcat.max-active: 50
     tomcat.max-idle: 20
     tomcat.min-idle: 15
-    validationQuery: SELECT 1
-    jpa:
-      properties:
-        hibernate:
-          dialect: org.hibernate.dialect.MySQL8Dialect
-    hibernate:
-      ddl-auto: update
   #Spring boot JPA insert in TABLE with uppercase name with Hibernate
   jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
     hibernate:
+      ddl-auto: update
       naming:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
 
@@ -33,5 +28,5 @@ management:
       show-details: "always"
 eureka:
   client:
-    serviceUrl: 
+    serviceUrl:
       defaultZone:  http://eureka-service-discovery:8761/eureka/
