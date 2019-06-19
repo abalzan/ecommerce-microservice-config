@@ -8,6 +8,12 @@ spring:
     tomcat.max-active: 50
     tomcat.max-idle: 20
     tomcat.min-idle: 15
+    jpa:
+      properties:
+        hibernate:
+          dialect: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: update
   #Spring boot JPA insert in TABLE with uppercase name with Hibernate
   jpa:
     database-platform: org.hibernate.dialect.MySQL8Dialect
