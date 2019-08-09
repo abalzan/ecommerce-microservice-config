@@ -23,8 +23,6 @@ spring:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
 
 management:
-  server:
-    port: ${PORT:8091}
   endpoints:
     web:
       exposure:

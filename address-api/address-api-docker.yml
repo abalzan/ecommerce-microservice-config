@@ -17,8 +17,6 @@ spring:
 
 
 management:
-  server:
-    port: ${PORT:8094}
   endpoints:
     web:
       exposure:
